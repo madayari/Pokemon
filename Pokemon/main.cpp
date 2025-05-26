@@ -75,18 +75,19 @@ public:
         getline(cin, player.name);
         cout << name << ": Ah, " << player.name << "! What a fantastic name!\n";
         cout << name << ": You must be eager to start your adventure. But first, you’ll need a Pokemon of your own!\n";
+
+        // Presenting Pokemon choices 
+        cout << name << ": I have three Pokemon here with me. They’re all quite feisty!\n";
+        cout << name << ": Choose wisely...\n"; std::cout << "1. Charmander - The fire type. A real hothead!\n";
+        cout << "2. Bulbasaur - The grass type. Calm and collected!\n";
+        cout << "3. Squirtle - The water type. Cool as a cucumber!\n";
+
+        int choice;
+        cout << name << ": So, which one will it be? Enter the number of your choice: ";
+        cin >> choice;
+        player.choosePokemon(choice);
     }
 
-    // Presenting Pokemon choices 
-    cout << name << ": I have three Pokemon here with me. They’re all quite feisty!\n";
-    cout << name << ": Choose wisely...\n"; std::cout << "1. Charmander - The fire type. A real hothead!\n";
-    cout << "2. Bulbasaur - The grass type. Calm and collected!\n";
-    cout << "3. Squirtle - The water type. Cool as a cucumber!\n";
-
-    int choice;
-    cout << name << ": So, which one will it be? Enter the number of your choice: ";
-    cin >> choice;
-    player.choosePokemon(choice);
 }
 
 int main() {
