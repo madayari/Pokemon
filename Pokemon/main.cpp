@@ -88,10 +88,10 @@ public:
     cin >> choice;
     player.choosePokemon(choice);
 }
-};
+
 int main() {
 
-
+     
     // Creating Objects of ProfessorOak, Pokemon and Player class
     ProfessorOak professor;
     Pokemon placeholderPokemon;
