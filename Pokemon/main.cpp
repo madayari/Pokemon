@@ -56,7 +56,7 @@ public:
                  chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
                  break;
         }
-        cout << "PLayer" << name << "chose" chosenPokemon.name << "!\n";
+        cout << "PLayer" << name << "chose" << chosenPokemon.name << "!\n";
     }
 };
 
@@ -88,7 +88,7 @@ public:
         player.choosePokemon(choice);
     }
 
-}
+};
 
 int main() {
 
